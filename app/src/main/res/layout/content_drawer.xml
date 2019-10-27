@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DrawerActivity"
+    tools:showIn="@layout/app_bar_drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnSaveData"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:hint="اضافه"
+                android:onClick="onClickBtnSave"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_margin="2dp"
+                android:background="@drawable/my_btn"
+                />
+
+            <EditText
+                android:id="@+id/CustomerName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="اسم التاجر"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="-5dp"
+                android:layoutDirection="rtl"
+                android:layout_margin="2dp"
+                android:background="@drawable/my_edit_text"
+                />
+
+            <EditText
+                android:id="@+id/FarmerName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="اسم الفلاح"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="-5dp"
+                android:layoutDirection="rtl"
+                android:layout_margin="2dp"
+                android:background="@drawable/my_edit_text"
+                />
+
+            <EditText
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:hint=" السعر"
+                android:textSize="12sp"
+                android:padding="10dp"
+                android:layoutDirection="rtl"
+                android:layout_margin="2dp"
+                android:background="@drawable/my_edit_text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/ListView"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:textDirection="rtl">
+
+            </ListView>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            &lt;!&ndash;<Button
+                android:id="@+id/btnShowSellersBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="حساب التجار"
+                android:padding="5dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="12sp"
+                android:onClick="onClickBtnShowSellersBill"
+                android:background="@drawable/my_btn"
+                />
+            <Button
+                android:id="@+id/btnShowFarmersBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="حساب الفلاحين"
+                android:padding="5dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="12sp"
+                android:onClick="onClickBtnShowFarmersBill"
+                android:background="@drawable/my_btn"
+                />&ndash;&gt;
+            &lt;!&ndash;<Button
+                android:id="@+id/btnShowMy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="الحساب الشخصى"
+                android:padding="5dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="12sp"
+                android:onClick="onClickBtnShowMy"
+                android:background="@drawable/my_btn"
+                />&ndash;&gt;
+        </LinearLayout>-->
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:id="@+id/drawerPane">
+
+        <ListView
+            android:id="@+id/list_drawer_pane"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:background="#ffffff"
+            >
+
+        </ListView>
+    </LinearLayout>-->
+
+</RelativeLayout>

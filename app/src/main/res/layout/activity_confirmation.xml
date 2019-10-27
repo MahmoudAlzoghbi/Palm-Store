@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmationActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="تمت العملية بنجاح"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnReturnHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:text="الرجوع الى الصفحه الرئيسية"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:onClick="onClickBtnGoBackHome"/>
+
+</LinearLayout>
